@@ -4,9 +4,8 @@
 <head>
   <link rel="stylesheet" href="portfolioStyles.css">
 
-  <script src="prettyPhoto/js/jquery.js" type="text/javascript" charset="utf-8"></script>
   <link rel="stylesheet" href="prettyPhoto/css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
-  <script src="prettyPhoto/js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
+
 
 
   <title>Portfolio Title</title>
@@ -30,21 +29,28 @@
     <img id=profilePhoto src=images/personableProfilePhoto.jpg>
   </div>
 
-  <section id=portfolioPieces>
-    <header>
-      <h1>Title</h1>
-    </header>
+  <section id=projects>
+    <project class=template>
+      <header>
+        <h1>Title</h1>
+      </header>
 
-    <div id=thumbnail>
-    </div>
+      <div id=thumbnail>
+        <a href="http://placehold.it/350x350" rel="prettyPhoto">
+          <img src="http://placehold.it/50x50">
+        </a>
+      </div>
 
-    <div id=oneLiner>
-      By
-      <address><a href="">Author Name</a></address>
-    </div>
+      <div id=oneLiner>
+      </div>
 
-    <div id=image>
-    </div>
+      <section class=lightBox>
+        <div id=image>
+
+        </div>
+      </section>
+
+    </project>
   </section>
 
   <footer>
@@ -52,13 +58,14 @@
   </footer>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="prettyPhoto/js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
   <script type="text/javascript" charset="utf-8">
     $(document).ready(function() {
       $("a[rel^='prettyPhoto']").prettyPhoto();
     });
   </script>
-  <script src="scripts/projects.js"></script>
-  <script src="scripts/scripts.js"></script>
+  <script src="projects.js"></script>
+  <script src="scripts.js"></script>
 </body>
 
 </html>
