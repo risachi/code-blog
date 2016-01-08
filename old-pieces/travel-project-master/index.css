@@ -1,0 +1,467 @@
+/*Site-wide formatting:   */
+
+body {
+  margin: 0;
+  background-color: #ede9ce;
+}
+
+.whiteLinks {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  font-style: italic;
+}
+
+#logo {
+  display: flex;
+  align-items: baseline;
+  text-align: left;
+  padding-left: 15px;
+  width: 270px;
+  height: 70px;
+  border-bottom-right-radius: 20px;
+  background-color: #5a5c51;
+  color: white;
+  border-bottom: 3px solid #1d2120;
+  border-right: 3px solid #1d2120;
+}
+
+#logo h1 {
+  font-family: 'Playfair Display SC', serif;
+  padding-left: 15px;
+  font-size: 30px;
+  color: #729f98;
+  font-style: italic;
+  font-weight: 700;
+}
+
+#logo h3 {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+#container {
+  display: flex;
+  justify-content: space-between;
+}
+
+#menu {
+  background-color: #5a5c51;
+  display: flex;
+  width: 500px;
+  height: 70px;
+  border-bottom-left-radius: 20px;
+  border-bottom: 3px solid #1d2120;
+  border-left: 3px solid #1d2120;
+}
+
+
+/*Navigation Bar*/
+
+nav ul {
+  font-family: 'BenchNine', sans-serif;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-shadow: none;
+}
+
+
+/*Links to the navigation bar*/
+
+nav ul li a {
+  display: block;
+  text-decoration: none;
+  color: #ccc;
+}
+
+
+/*Navigation bar links on hover*/
+
+nav ul li a:hover {
+  color: white;
+  text-shadow: 0px -1px 19px white;
+}
+
+#background-graphic {
+  background-image: url("projectimages/hood-header.jpg");
+  position: absolute;
+  z-index: -1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+  width: 100%;
+}
+
+.homepage #background-graphic {
+  height: 700px;
+}
+
+#index-content {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  width: 900px;
+  margin: 175px auto;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  color: white;
+  background: rgba(0, 0, 0, 0.75);
+}
+
+
+/*Header & Footer format: */
+
+footer {
+  font-family: 'Gentium Basic', serif;
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 25px;
+  border-top: 3px solid #1d2120;
+  border-left: 3px solid #1d2120;
+  border-right: 3px solid #1d2120;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  height: 50px;
+  background-color: #5a5c51;
+  font-family: 'BenchNine', sans-serif;
+  font-size: 18px;
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+footer a {
+  padding-left: 15px;
+  padding-right: 15px;
+  color: #fff;
+}
+
+
+/*Main Page formats:  */
+
+
+/*Front page Gallery design*/
+
+#gallery {
+  height: 400px;
+  width: 600px;
+  border: 10px solid #027f45;
+  border-radius: 10px;
+}
+
+#carousel {
+  margin: 0 auto;
+}
+
+/*Front page button design*/
+
+.game-button {
+  border-radius: 10px;
+  height: 100px;
+  width: 300px;
+  margin: 0 auto;
+  background-color: #5a5a5a;
+  font-family: 'Playfair Display SC', serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  border: 2px solid #1d2120;
+}
+
+.game-button p {
+  padding-left: 50px;
+  padding-top: 15px;
+}
+
+
+/*Activities page formats:  */
+
+body {
+  font-family: 'Gentium Basic', serif;
+}
+
+#page-title {
+  text-align: center;
+  text-decoration: underline;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  margin-top: 250px;
+}
+
+#mainContent {
+  width: 700px;
+  margin: 10px auto;
+  padding: 2px;
+  display: flex;
+  align-items: flex-start;
+}
+
+#options {
+  min-width: 250px;
+  margin: 0 auto;
+}
+
+#results {
+  min-width: 300px;
+  margin: 20px auto;
+}
+
+label {
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+input {
+  margin-left: 10px;
+}
+
+
+/*Resources formatting:   */
+
+#resourcesContent {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  margin-top: 250px;
+  margin-bottom: 10em;
+}
+
+#activities {
+  background-color: #247291;
+  min-width: 475px;
+  max-width: 40%;
+  padding: 2%;
+  white-space: nowrap;
+  border-radius: 5px;
+  margin-right: 20px;
+  margin-left: 40px;
+}
+
+.listofLinks {
+  margin-bottom: 5px;
+}
+
+a:hover {
+  text-shadow: 0 0 2px white;
+}
+
+#webContent {
+  background-color: blue;
+}
+
+
+/*About Us text organizing*/
+
+#aboutUsBlurb {
+  width: 600px;
+  margin: 35px auto;
+  margin-top: 250px;
+  font-family: 'Gentium Basic', serif;
+}
+
+.aboutUs {
+  width: 600px;
+  margin: 30px auto;
+  margin-top: 50px;
+  background-color: #f0eceb;
+  border: 3px solid #1d2120;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+h2 {
+  font-family: 'Didact Gothic', sans-serif;
+}
+
+#contactus {
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#contactForm {
+  border: 2pt solid black;
+  border-radius: 5px;
+  margin: 50px;
+  margin-bottom: 100px;
+}
+
+label {
+  padding: 5px 5px;
+}
+
+fieldset {
+  border-radius: 5px;
+  max-width: 275px;
+  margin: 25px 10px;
+}
+
+input {
+  margin: 5px;
+  border-radius: 3px;
+}
+
+textarea {
+  width: 20em;
+  height: 25em;
+}
+
+#Lisa {
+  margin-bottom: 100px;
+}
+
+
+/*End of About Us-specific CSS*/
+
+#extraSpacing {
+  height: 100px;
+}
+
+.activitiesList {
+  font-size: 20px;
+}
+
+
+/* Icon list */
+
+.icons {
+  margin-top: 0.3em
+}
+
+.noChild {
+  float: left;
+  margin-top: -.2em;
+  margin-right: 0.2em;
+}
+
+.resourceIcons {
+  float: left;
+  margin-right: 0.2em;
+}
+
+
+/*Responsive Design*/
+
+@media screen and (max-width:1200px) {
+  body {
+    background-color: #ede9ce;
+  }
+  #container {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to right, #3E70B7, #4F92C9)
+  }
+  #logo {
+    width: auto;
+    justify-content: center;
+    border-left: 3px solid #1d2120;
+    border-bottom-right-radius: 0%;
+  }
+  #menu {
+    width: auto;
+    border-bottom-right-radius: 20px;
+    border-right: 3px solid #1d2120;
+  }
+  #background-graphic {
+    background-image: url("projectimages/hood-header.jpg");
+    position: absolute;
+    top: 146px;
+    z-index: -1;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 100%;
+  }
+  .homepage #background-graphic {
+    height: 300px;
+  }
+  #index-content {
+    width: 350px;
+    font-size: 18px;
+    margin-bottom: 100px;
+  }
+  #resourcesContent {
+    display: flex;
+    justify-content: center;
+    flex-flow: column-reverse wrap;
+    margin-top: 350px;
+  }
+  #activities {
+    background-color: #247291;
+    min-width: 600px;
+    padding: 2%;
+    white-space: nowrap;
+    border-radius: 5px;
+    margin: 10px auto;
+  }
+  #gallery {
+    margin: 0 auto;
+  }
+  #link-section h2 {
+    white-space: normal;
+    text-align: center;
+  }
+  #page-title {
+    margin-top: 320px;
+  }
+  #aboutUsBlurb {
+    width: 300px;
+    text-align: center;
+    margin-top: 350px;
+  }
+  #contactus {
+    order: 3;
+  }
+  .aboutUs {
+    width: 600px;
+  }
+  #Lisa {
+    margin-bottom: 100px;
+  }
+  #content {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  #contactForm {
+    width: 300px;
+    margin: 0 auto;
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (max-width:640px) {
+  #mainContent {
+    width: 350px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  #page-title {
+    margin-top: 350px;
+  }
+  #resourcesContent {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 300px;
+  }
+  #gallery {
+    display: none;
+  }
+  #activities {
+    background-color: #247291;
+    min-width: 320px;
+    padding: 2%;
+    white-space: nowrap;
+    border-radius: 5px;
+    margin: 10px auto;
+  }
+  .aboutUs {
+    width: 300px;
+  }
+}

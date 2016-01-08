@@ -1,0 +1,45 @@
+/*body {
+  background-image: linear-gradient( rgba(0, 0, 0, .1), rgba(0, 0, 0, .1) ), url("background.jpg");
+}*/
+
+h1 {
+  font-family: 'Titan One', cursive;
+  font-size: 400%;
+  text-align: center;
+}
+
+h3 {
+  font-family: 'Hind', sans-serif;
+  font-size: 150%;
+  text-align: center;
+}
+
+h4 {
+  font-family: 'Muli', sans-serif;
+  text-align: center;
+}
+
+img {
+  height: 350px;
+  width: 350px;
+}
+
+#choices {
+  text-align: center;
+}
+
+#spacing {
+  height: 100px;
+}
+
+#chart {
+  width: 750px;
+  margin: 0 auto;
+}
+
+#veryBottom {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}

@@ -1,45 +1,64 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" href=".css">
 
-    <title>Blog</title>
-  </head>
+<head>
+  <link rel="stylesheet" href="portfolioStyles.css">
 
-  <body>
-        <header>
-          <h1>
-            blog header
-          </h1>
-          <p>The shocking power of static pages</p>
-        </header>
-        <nav>
-          <ul>
-            <li><a href="http://twitter.com/therealcathrax" target="_blank">Twitter</a></li>
-            <li><a href="http://github.com/risachi" target="_blank">Github</a></li>
-          </ul>
-        </nav>
+  <script src="prettyPhoto/js/jquery.js" type="text/javascript" charset="utf-8"></script>
+  <link rel="stylesheet" href="prettyPhoto/css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
+  <script src="prettyPhoto/js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
 
-        <section id="articles">
-          <article class="template" data-category="cat">
-            <header>
-              <h1>Title</h1>
-              <div class="byline">
-                By <address><a href="">Author Name</a></address>
-                published <time pubdate datetime="2000-01-01">Publish Time</time>
-              </div>
-            </header>
-            <section class="article-body"></section>
-          </article>
-        </section>
-      </div>
 
-    <footer>
-      &copy; 2015 Code Fellows | Static Blog | Happy Ipsum!
-    </footer>
+  <title>Portfolio Title</title>
+</head>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="scripts/blogArticles.js"></script>
-    <script src="scripts/article.js"></script>
-  </body>
+<body>
+  <header>
+    <h1>
+      Nice to Meet You!
+    </h1>
+    <p>description</p>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="http://twitter.com/therealcathrax" target="_blank">Twitter</a></li>
+      <li><a href="http://github.com/risachi" target="_blank">Github</a></li>
+    </ul>
+  </nav>
+
+  <div>
+    <img id=profilePhoto src=images/personableProfilePhoto.jpg>
+  </div>
+
+  <section id=portfolioPieces>
+    <header>
+      <h1>Title</h1>
+    </header>
+
+    <div id=thumbnail>
+    </div>
+
+    <div id=oneLiner>
+      By
+      <address><a href="">Author Name</a></address>
+    </div>
+
+    <div id=image>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2015
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script type="text/javascript" charset="utf-8">
+    $(document).ready(function() {
+      $("a[rel^='prettyPhoto']").prettyPhoto();
+    });
+  </script>
+  <script src="scripts/projects.js"></script>
+  <script src="scripts/scripts.js"></script>
+</body>
+
 </html>
