@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!--CSS stylesheet -->
+  <link rel="stylesheet" href="index.css">
+  <!-- google fonts/css files linked here -->
+  <link href='https://fonts.googleapis.com/css?family=BenchNine:400,700|Didact+Gothic|Gentium+Basic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Playfair+Display+SC:700italic|Josefin+Sans' rel='stylesheet' type='text/css'>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- javascript files linked here -->
+  <script type="text/javascript" src="setup.js"></script>
+  <script type="text/javascript" src="gallery.js"></script>
+  <script src="headerfooter.js" async type="text/javascript"></script>
+  <!-- favicon -->
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <!-- title here -->
+  <title>Activities</title>
+</head>
+
+<body>
+
+  <header id="container" class="index-header">
+    <div id="background-graphic"></div>
+    <section id="logo">
+      <h3>Discover</h3>
+      <h1>Portland</h1>
+    </section>
+    <nav>
+      <ul id="menu">
+        <li><a href="index.html">Main Page</a></li>
+        <li><a href="activities.html">Activities</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="aboutus.html">About us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <h1 id="page-title">Select your activity preferences</h1>
+
+  <div id="mainContent">
+
+    <form id="options">
+
+      <h2><span class="fa fa-home"></span> Activity Type</h2>
+      <label>
+        <input type="radio" name="isIndoor" id="outdoor" value="false">Outdoor</label>
+      <label>
+        <input type="radio" name="isIndoor" id="indoor" value="true">Indoor</label>
+
+
+      <h2><span class="fa fa-child"></span> Kid-Friendly</h2>
+      <label>
+        <input type="radio" name="kidFriendly" id="kids" value="true">Yes</label>
+      <label>
+        <input type="radio" name="kidFriendly" id="noKids" value="false">No</label>
+
+
+      <h2><span class="fa fa-usd"></span> Cost</h2>
+      <label>
+        <input type="radio" name="cost" id="lowCost" value="lowCost">&#36;</label>
+      <label>
+        <input type="radio" name="cost" id="medCost" value="medCost">&#36;&#36;</label>
+      <label>
+        <input type="radio" name="cost" id="highCost" value="highCost">&#36;&#36;&#36;</label>
+
+
+      <h2><span class="fa fa-heart-o"></span> Intensity</h2>
+      <label>
+        <input type="radio" name="intensity" id="lowIntensity" value="low">Low</label>
+      <label>
+        <input type="radio" name="intensity" id="mediumIntensity" value="medium">Medium</label>
+      <label>
+        <input type="radio" name="intensity" id="highIntensity" value="high">High</label>
+
+      <br>
+      <br>
+      <button id="clearButton">Reset</button>
+
+    </form>
+
+    <div id="results">
+      <p>Placeholder for results text</p>
+    </div>
+  </div>
+
+  </div>
+  <div id=extraSpacing>
+  </div>
+  <footer>
+    &copy; DiscoverPortland
+    <span id="dateSpan"></span>
+    <a href="#back">Back to top &raquo;</a>
+  </footer>
+
+  <script type="text/javascript" src="activities.js"></script>
+</body>
+
+</html>
