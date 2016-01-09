@@ -1,46 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>Blog</title>
-    <link rel="stylesheet" href="vendor/styles/normalize.css">
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/modules.css">
-  </head>
-  <body>
-    <main>
-        <header>
-          <h1>
-            Kilovolt Blog!
-          </h1>
-          <p>The shocking power of static pages</p>
-        </header>
-        <nav>
-          <ul>
-            <li>Articles</li>
-            <li>About (coming soon!)</li>
-            <li><a href="http://twitter.com/brookr" target="_blank">Twitter</a></li>
-            <li><a href="http://github.com/brookr" target="_blank">Github</a></li>
-          </ul>
-        </nav>
-        <section id="articles">
-          <article class="template" data-category="cat">
-            <header>
-              <h1>Title</h1>
-              <div class="byline">
-                By <address><a href="">Author Name</a></address>
-                published <time pubdate datetime="2000-01-01">Publish Time</time>
-              </div>
-            </header>
-            <section class="article-body"></section>
-          </article>
-        </section>
-      </div>
-    </main>
-    <footer>
-      &copy; 2015 Code Fellows | Static Blog | Happy Ipsum!
-    </footer>
+<html>
 
-    <!-- // TODO: Include any/all needed script tags -->
-  </body>
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico|Imprima|Catamaran:400,500,300|Source+Sans+Pro:400,300|Libre+Baskerville:400,400italic|Lobster' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="portfolioStyles.css">
+  <link rel="stylesheet" href="prettyPhoto/css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  <title>My Portfolio</title>
+</head>
+
+<body>
+  <header>
+    <h1>
+      Nice to Meet You!
+    </h1>
+    <p>As you can see, I am a purrito.</p>
+
+    <div id='social'>
+      <span class='fa fa-github-alt'><a href="http://github.com/risachi" target="_blank">risachi</a></span>
+      <span class='fa fa-twitter'><a href="http://twitter.com/therealcathrax" target="_blank">@theRealCathrax</a></span>
+    </div>
+
+    <div>
+      <img id=profilePhoto src=images/personableProfilePhoto.jpg title="I'm a purrito">
+    </div>
+  </header>
+
+  <section id=projects>
+    <article class=template>
+      <header>
+        <h2>Title</h2>
+      </header>
+
+      <div id=image>
+        <a href="http://placehold.it/350x350" rel="prettyPhoto" title="description goes here">
+          <img id=thumbnail src="http://placehold.it/50x50" alt="title goes here">
+        </a>
+      </div>
+
+      <time pubdate datetime="2000-01-01">Publish Time</time>
+
+      <div id=oneLiner>
+      </div>
+
+    </article>
+  </section>
+
+  <footer>
+    &copy; 2016 Lisa Hackenberger a.k.a. Purrito
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="prettyPhoto/js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
+  <script src="projects.js"></script>
+  <script src="scripts.js"></script>
+</body>
+
 </html>
