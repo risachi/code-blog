@@ -6,6 +6,7 @@ $(function() {
     this.image = piece.image;
     this.oneLiner = piece.oneLiner;
     this.description = piece.description;
+    this.publishedOn = piece.publishedOn;
   }
 
   Project.prototype.toHtml = function() {
@@ -18,15 +19,18 @@ $(function() {
     $newProject.find('div > a').attr('href', this.image);
     $newProject.find('div > a').attr('title', this.description);
 
+    $newProject.find('time').html('title', this.publishedOn);
+
+    $newProject.find('time').html('posted ' + parseInt((new Date() - new Date(this.publishedOn))/60/60/24/1000) + ' days ago');
+
 
     $newProject.removeClass('template');
     return $newProject;
   };
 
   posts.forEach(function(a) {
-    $('#projects').append((new Project(a)).toHtml());
+    $('#projects').append(new Project(a).toHtml());
   });
 
-  $('.template').hide();
   $("a[rel^='prettyPhoto']").prettyPhoto();
 });
