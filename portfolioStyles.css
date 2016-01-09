@@ -19,6 +19,10 @@ footer {
   text-align: center;
 }
 
+.template {
+  display: none;
+}
+
 #profilePhoto {
   width: 15em;
 }
