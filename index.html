@@ -2,11 +2,9 @@
 <html>
 
 <head>
+  <link href='https://fonts.googleapis.com/css?family=Dancing+Script:400,700|Satisfy|Pacifico|Imprima|Catamaran:400,500,300|Source+Sans+Pro:400,300' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="portfolioStyles.css">
-
   <link rel="stylesheet" href="prettyPhoto/css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
-
-
 
   <title>Portfolio Title</title>
 </head>
@@ -26,31 +24,25 @@
   </nav>
 
   <div>
-    <img id=profilePhoto src=images/personableProfilePhoto.jpg>
+    <img id=profilePhoto src=images/personableProfilePhoto.jpg title="I'm a purrito">
   </div>
 
   <section id=projects>
-    <project class=template>
+    <article class=template>
       <header>
-        <h1>Title</h1>
+        <h2>Title</h2>
       </header>
 
-      <div id=thumbnail>
-        <a href="http://placehold.it/350x350" rel="prettyPhoto">
-          <img src="http://placehold.it/50x50">
+      <div id=image>
+        <a href="http://placehold.it/350x350" rel="prettyPhoto" title="description goes here">
+          <img id=thumbnail src="http://placehold.it/50x50" alt="title goes here">
         </a>
       </div>
 
       <div id=oneLiner>
       </div>
 
-      <section class=lightBox>
-        <div id=image>
-
-        </div>
-      </section>
-
-    </project>
+    </article>
   </section>
 
   <footer>
@@ -59,11 +51,6 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="prettyPhoto/js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
-  <script type="text/javascript" charset="utf-8">
-    $(document).ready(function() {
-      $("a[rel^='prettyPhoto']").prettyPhoto();
-    });
-  </script>
   <script src="projects.js"></script>
   <script src="scripts.js"></script>
 </body>

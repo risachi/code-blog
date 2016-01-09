@@ -1,19 +1,18 @@
-body {
-  padding: 1em;
+/*font-family: 'Dancing Script', cursive;
+font-family: 'Satisfy', cursive;
+font-family: 'Pacifico', cursive;
+
+font-family: 'Imprima', sans-serif;
+font-family: 'Catamaran', sans-serif;
+font-family: 'Source Sans Pro', sans-serif;*/
+
+
+article {
+  float: left;
 }
 
-main {
-  margin: auto;
-  width: 80%;
-}
+h1 {
 
-address {
-  display: inline-block;
-}
-
-hr {
-  margin: 1em;
-  width: 80%;
 }
 
 #profilePhoto {
