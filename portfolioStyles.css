@@ -1,20 +1,30 @@
-/*font-family: 'Dancing Script', cursive;
-font-family: 'Satisfy', cursive;
-font-family: 'Pacifico', cursive;
+h1 {
+  font-family: 'Lobster', cursive;
+  font-size: 3em;
+}
 
-font-family: 'Imprima', sans-serif;
-font-family: 'Catamaran', sans-serif;
-font-family: 'Source Sans Pro', sans-serif;*/
-
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
 
 article {
   float: left;
+  width: 15em;
 }
 
-h1 {
-
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
 }
 
 #profilePhoto {
   width: 15em;
+}
+
+#thumbnail {
+  width: 8em;
+  border: .2em solid lightgrey;
+  border-radius: .5em;
 }
