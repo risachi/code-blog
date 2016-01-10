@@ -1,5 +1,4 @@
 $(function() {
-  $('#tabs').tabs();
 
   function Project(piece) {
     this.title = piece.title;
