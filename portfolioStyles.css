@@ -34,12 +34,13 @@ footer {
   border-radius: .5em;
 }
 
-#lineBreak {
-  height: 100px;
-}
-
 @media (max-width: 500px) {
   article {
     padding: 10%;
+    background-color: red;
+  }
+
+  h2 {
+    font-size: 1%;
   }
 }
