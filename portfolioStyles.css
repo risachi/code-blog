@@ -9,7 +9,13 @@ body {
 
 article {
   float: left;
-  width: 15em;
+  width: 20%;
+  padding: 1%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 footer {
@@ -23,12 +29,17 @@ footer {
   display: none;
 }
 
-#profilePhoto {
-  width: 15em;
-}
-
 #thumbnail {
-  width: 8em;
   border: .2em solid lightgrey;
   border-radius: .5em;
+}
+
+#lineBreak {
+  height: 100px;
+}
+
+@media (max-width: 500px) {
+  article {
+    padding: 10%;
+  }
 }
