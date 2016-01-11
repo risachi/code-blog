@@ -1,13 +1,19 @@
 $(function() {
-  $('nav').on('click', function(e) {
-    // * Hide'em all
-    $('div[data-tab-number]').hide();
-
+  $('nav a').on('click', function(e) {
     // * Find out the tab number
-    var tabNumber = $(e.target).attr('data-tab-number');
+    var tab = $(e.target);
+    var tabNumber = tab.attr('data-tab-number');
+
+    // * Return and do nothing if same tab was clicked (is active)
+    if (tab.hasClass('active')) {
+      return;
+    }
 
     // * Get the content tab
     var contentTab = $('div[data-tab-number=' + tabNumber + ']');
+
+    // * Hide'em all
+    $('div[data-tab-number]').hide();
 
     // * Show the one we want
     contentTab.show();
