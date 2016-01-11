@@ -43,6 +43,10 @@ article {
   padding: 1%;
 }
 
+h2 {
+  font-size: 2em;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -76,10 +80,9 @@ footer {
 @media (max-width: 500px) {
   article {
     padding: 10%;
-    background-color: red;
   }
 
   h2 {
-    font-size: 1%;
+    font-size: 1em;
   }
 }
