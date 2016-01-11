@@ -1,17 +1,16 @@
 $(function() {
   $('nav').on('click', function(e) {
+    // * Hide'em all
+    $('div[data-tab-number]').hide();
+
     // * Find out the tab number
     var tabNumber = $(e.target).attr('data-tab-number');
-    console.log('Tab number: ' + tabNumber);
 
     // * Get the content tab
     var contentTab = $('div[data-tab-number=' + tabNumber + ']');
-    console.log('Content tab: ' + contentTab);
-
-    // * Hide'em all
-    $('[data-tab-number]').hide();
 
     // * Show the one we want
+    contentTab.show();
   });
 
   function Project(piece) {
