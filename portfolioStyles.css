@@ -34,6 +34,8 @@ nav a:hover {
   text-decoration: underline;
 }
 
+/*end Navbar*/
+
 
 article {
   float: left;
@@ -44,6 +46,11 @@ article {
 img {
   max-width: 100%;
   height: auto;
+}
+
+time {
+  font-size: .75em;
+  color: grey;
 }
 
 footer {
