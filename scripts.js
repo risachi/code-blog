@@ -1,10 +1,11 @@
 $(function() {
   $('nav').on('click', function(e) {
-    console.log(e.target);
-    // 1. Find out the tab number
-    // 2. Get the content tab
-    // 4. Hide'em all
-    // 3. Show the one we want
+    // * Find out the tab number
+    console.log($(e.target).attr('data-tab-number'));
+
+    // * Get the content tab
+    // * Hide'em all
+    // * Show the one we want
   });
 
   function Project(piece) {
