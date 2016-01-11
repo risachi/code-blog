@@ -10,7 +10,7 @@ $(function() {
   }
 
   Project.prototype.toHtml = function() {
-    var MILLIS_TO_DAYS = 60/60/24/1000;
+    var MILLIS_TO_DAYS = 60*60*24*1000;
     var $newProject = $('article.template').clone();
 
     $newProject.find('h2').html(this.title);
