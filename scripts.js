@@ -10,6 +10,7 @@ $(function() {
   }
 
   Project.prototype.toHtml = function() {
+    var MILLIS_TO_DAYS = 60/60/24/1000;
     var $newProject = $('article.template').clone();
 
     $newProject.find('h2').html(this.title);
@@ -21,7 +22,7 @@ $(function() {
 
     $newProject.find('time').html('title', this.publishedOn);
 
-    $newProject.find('time').html('posted ' + parseInt((new Date() - new Date(this.publishedOn))/60/60/24/1000) + ' days ago');
+    $newProject.find('time').html('posted ' + parseInt((new Date() - new Date(this.publishedOn)) / MILLIS_TO_DAYS) + ' days ago');
 
 
     $newProject.removeClass('template');
