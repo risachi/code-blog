@@ -11,6 +11,9 @@ $(function() {
 
     // * Show the one we want
     contentTab.show();
+
+    // * Toggle .active on all a's inside of nav
+    $('nav a').toggleClass('active');
   });
 
   function Project(piece) {

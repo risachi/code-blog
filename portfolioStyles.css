@@ -33,6 +33,10 @@ footer {
   display: none;
 }
 
+.active {
+  background-color: red;
+}
+
 #hidden {
   display: none;
 }
