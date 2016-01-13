@@ -2,16 +2,51 @@
 <html>
 
 <head>
-  <link href='https://fonts.googleapis.com/css?family=Pacifico|Imprima|Catamaran:400,500,300|Source+Sans+Pro:400,300|Libre+Baskerville:400,400italic|Lobster' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="portfolioStyles.css">
-  <link rel="stylesheet" href="prettyPhoto/css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
+  <link href='https://fonts.googleapis.com/css?family=Pacifico|Source+Sans+Pro:400,300' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/layout.css">
+  <link rel="stylesheet" href="styles/module.css">
+  <link rel="stylesheet" href="styles/state.css">
+  <link rel="stylesheet" href="styles/theme.css">
 
-  <link rel="stylesheet" media="(max-width: 500px)" href="portfolioStyles.css" />
+  <link rel="stylesheet" media="(max-width: 500px)" href="state.css" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.min.js" charset="utf-8"></script>
+
   <title>My Portfolio</title>
+
+<script id='handlebarsPortfolioTemplate' type='text/x-handlebars-template'>
+  <div data-tab-number='1'>
+    <section id=projects>
+      <article class=template>
+        <header>
+          <h2>{{title}}</h2>
+        </header>
+
+        <div id=image>
+            <img src="{{{thumbnail}}}">
+            <!-- <img id=thumbnail src="http://placehold.it/50x50" alt="title goes here"> -->
+          </a>
+        </div>
+
+        <time pubdate datetime="2000-01-01">{{daysAgo}}</time>
+
+        <div id=oneLiner>
+          {{oneLiner}}
+        </div>
+
+      </article>
+    </section>
+  </div>
+</script>
+
+
+
+
 </head>
 
 <body>
@@ -32,27 +67,7 @@
     </h1>
   </header>
 
-  <div data-tab-number='1'>
-    <section id=projects>
-      <article class=template>
-        <header>
-          <h2>Title</h2>
-        </header>
-
-        <div id=image>
-          <a href="http://placehold.it/350x350" rel="prettyPhoto" title="description goes here">
-            <img id=thumbnail src="http://placehold.it/50x50" alt="title goes here">
-          </a>
-        </div>
-
-        <time pubdate datetime="2000-01-01">Publish Time</time>
-
-        <div id=oneLiner>
-        </div>
-
-      </article>
-    </section>
-  </div>
+  <div id="handlebarsTemplatePlacement"></div>
 
   <div data-tab-number='2' id=hidden>
     <p>As you can see, I am a purrito.</p>
@@ -71,8 +86,6 @@
     &copy; 2016 Lisa Hackenberger a.k.a. Purrito
   </footer>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-  <script src="prettyPhoto/js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
   <script src="projects.js"></script>
   <script src="scripts.js"></script>
 </body>

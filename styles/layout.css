@@ -1,0 +1,7 @@
+ /* These divide the page into major sections. */
+
+ article {
+   float: left;
+   width: 20%;
+   padding: 1%;
+ }
