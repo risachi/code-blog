@@ -1,0 +1,17 @@
+/* define things like a color scheme or typographic treatment across a site */
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+time {
+  font-size: .75em;
+  color: grey;
+}
+
+
+#thumbnail {
+  border: .2em solid lightgrey;
+  border-radius: .5em;
+}

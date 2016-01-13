@@ -11,7 +11,7 @@ var posts = [{
   image: 'http://placehold.it/350x350',
   oneLiner: 'Cute pandas or cute food? Your choice.',
   description: '<p>Did you know that there is a shortage of data on whether people prefer adorable red pandas, or aesthetically pleasing food items? This application aims to correct this problem. You\'re welcome.</p>',
-  publishedOn: '2015-11-31'
+  publishedOn: '2015-11-30'
 }, {
   title: 'Donut Shop',
   thumbnail: 'old-pieces/thumbnails/donutShop.png',
@@ -25,5 +25,5 @@ var posts = [{
   image: 'http://placehold.it/350x350',
   oneLiner: 'Ruffly done "About Me" page',
   description: '<p>An "About Me" page for the household dog, who is obsessed with cats. All content is his; I was his medium due to his lack of opposable thumbs.</p>',
-  publishedOn: '2015-09-31'
+  publishedOn: '2015-09-30'
 }];

@@ -1,0 +1,16 @@
+/* how things look in a particular state (active/inactive, hidden/expanded) */
+
+
+#hidden {
+  display: none;
+}
+
+@media (max-width: 500px) {
+  article {
+    padding: 10%;
+  }
+
+  h2 {
+    font-size: 1em;
+  }
+}
