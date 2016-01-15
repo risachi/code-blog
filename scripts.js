@@ -1,4 +1,6 @@
 $(function() {
+
+
   $('nav a').on('click', function(e) {
     // * Find out the tab number
     var tab = $(e.target);
@@ -30,6 +32,13 @@ $(function() {
     this.description = piece.description;
     this.publishedOn = piece.publishedOn;
   }
+
+  var sampleObject = {
+    name: 'moot',
+    project: '4chan'
+  };
+
+  console.log(JSON.stringify(posts));
 
   Project.prototype.age = function() {
     var MILLIS_IN_DAYS = 60 * 60 * 24 * 1000;
