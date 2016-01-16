@@ -33,12 +33,23 @@ $(function() {
     this.publishedOn = piece.publishedOn;
   }
 
+
+
+
   var sampleObject = {
     name: 'moot',
     project: '4chan'
   };
 
-  console.log(JSON.stringify(posts));
+  var stringified = JSON.stringify(posts);
+
+  console.log(stringified);
+  console.log(posts[0].title);
+  console.log(jQuery.parseJSON(JSON.stringify(posts[0].title)));
+
+
+
+
 
   Project.prototype.age = function() {
     var MILLIS_IN_DAYS = 60 * 60 * 24 * 1000;
