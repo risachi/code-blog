@@ -36,16 +36,59 @@ $(function() {
 
 
 
-  var sampleObject = {
-    name: 'moot',
-    project: '4chan'
-  };
 
-  var stringified = JSON.stringify(posts);
 
-  console.log(stringified);
-  console.log(posts[0].title);
-  console.log(jQuery.parseJSON(JSON.stringify(posts[0].title)));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// posts[] is located in projects.js
+
+  var postsAsJson = JSON.stringify(posts);
+
+  // retrieve using ajax
+  $.ajax('https://eaternet.io/api/agencies').success(function(data) {
+    console.log(data);
+    // console.log($.parseJSON(data));
+  }).fail(function() {
+    console.log('failed');
+  });
+  // render posts[{}] on the page
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
