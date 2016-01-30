@@ -1,93 +1,81 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-  <link href='https://fonts.googleapis.com/css?family=Pacifico|Source+Sans+Pro:400,300' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="styles/base.css">
-  <link rel="stylesheet" href="styles/layout.css">
-  <link rel="stylesheet" href="styles/module.css">
-  <link rel="stylesheet" href="styles/state.css">
-  <link rel="stylesheet" href="styles/theme.css">
+  <head>
+    <title>My Portfolio</title>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico|Source+Sans+Pro:400,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/layout.css">
+    <link rel="stylesheet" href="styles/module.css">
+    <link rel="stylesheet" href="styles/state.css">
+    <link rel="stylesheet" href="styles/theme.css">
+    <link rel="stylesheet" media="(max-width: 500px)" href="state.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
 
-  <link rel="stylesheet" media="(max-width: 500px)" href="state.css" />
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <a href='#' data-tab-number='1' class=active>Home</a>
+        </li>
+        <li>
+          <a href='#' data-tab-number='2'>About</a>
+        </li>
+      </ul>
+    </nav>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <header>
+      <h1>
+        Nice to Meet You!
+      </h1>
+    </header>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.min.js" charset="utf-8"></script>
+    <div id="handlebarsTemplatePlacement"></div>
 
-  <title>My Portfolio</title>
-
-<script id='handlebarsPortfolioTemplate' type='text/x-handlebars-template'>
-  <div data-tab-number='1'>
-    <section id=projects>
-      <article class=template>
-        <header>
-          <h2>{{title}}</h2>
-        </header>
-
-        <div id=image>
-            <img src="{{{thumbnail}}}">
-            <!-- <img id=thumbnail src="http://placehold.it/50x50" alt="title goes here"> -->
-          </a>
-        </div>
-
-        <time pubdate datetime="2000-01-01">{{daysAgo}}</time>
-
-        <div id=oneLiner>
-          {{oneLiner}}
-        </div>
-
-      </article>
-    </section>
-  </div>
-</script>
-
-
-
-
-</head>
-
-<body>
-  <nav>
-    <ul>
-      <li>
-        <a href='#' data-tab-number='1' class=active>Home</a>
-      </li>
-      <li>
-        <a href='#' data-tab-number='2'>About</a>
-      </li>
-    </ul>
-  </nav>
-
-  <header>
-    <h1>
-      Nice to Meet You!
-    </h1>
-  </header>
-
-  <div id="handlebarsTemplatePlacement"></div>
-
-  <div data-tab-number='2' id=hidden>
-    <p>As you can see, I am a purrito.</p>
-
-    <div id='social'>
-      <span class='fa fa-github-alt'><a href="http://github.com/risachi" target="_blank">risachi</a></span>
-      <span class='fa fa-twitter'><a href="http://twitter.com/therealcathrax" target="_blank">@theRealCathrax</a></span>
+    <div data-tab-number='2' id=hidden>
+      <p>As you can see, I am a purrito.</p>
+      <div id='social'>
+        <span class='fa fa-github-alt'><a href="http://github.com/risachi" target="_blank">risachi</a></span>
+        <span class='fa fa-twitter'><a href="http://twitter.com/therealcathrax" target="_blank">@theRealCathrax</a></span>
+      </div>
+      <div>
+        <img id=profilePhoto src=images/personableProfilePhoto.jpg title="I'm a purrito" width='500'>
+      </div>
     </div>
 
-    <div>
-      <img id=profilePhoto src=images/personableProfilePhoto.jpg title="I'm a purrito" width='500'>
+    <footer>
+      &copy; 2016 Lisa Hackenberger a.k.a. Purrito
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.min.js" charset="utf-8"></script>
+    <script src="projects.json"></script>
+    <script src="jsongen.js"></script>
+    <script src="scripts.js"></script>
+    <script id='handlebarsPortfolioTemplate' type='text/x-handlebars-template'>
+    <div id = "project" data-tab-number='1'>
+      {{#each project}}
+        <section id=projects>
+          <article class=template>
+            <header>
+              <h2>{{title}}</h2>
+            </header>
+            <div id=image>
+                <img src="{{{thumbnail}}}">
+                <!-- <img id=thumbnail src="http://placehold.it/50x50" alt="title goes here"> -->
+              </a>
+            </div>
+            <time pubdate datetime="2000-01-01">{{daysAgo}}</time>
+            <div id=oneLiner>
+              {{oneLiner}}
+            </div>
+          </article>
+        </section>
+      {{#each}}
     </div>
-  </div>
+    </script>
 
-  <footer>
-    &copy; 2016 Lisa Hackenberger a.k.a. Purrito
-  </footer>
-
-  <script src="projects.js"></script>
-  <script src="scripts.js"></script>
-</body>
-
+  </body>
 </html>
