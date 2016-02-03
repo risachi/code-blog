@@ -19,30 +19,30 @@
 
   <title>My Portfolio</title>
 
-<script id='handlebarsPortfolioTemplate' type='text/x-handlebars-template'>
-  <div data-tab-number='1'>
-    <section id=projects>
-      <article class=template>
-        <header>
-          <h2>{{title}}</h2>
-        </header>
+  <script id='handlebarsPortfolioTemplate' type='text/x-handlebars-template'>
+    <div data-tab-number='1'>
+      <section id=projects>
+        <article class=template>
+          <header>
+            <h2>{{title}}</h2>
+          </header>
 
-        <div id=image>
+          <div id=image>
             <img src="{{{thumbnail}}}">
             <!-- <img id=thumbnail src="http://placehold.it/50x50" alt="title goes here"> -->
-          </a>
-        </div>
+            </a>
+          </div>
 
-        <time pubdate datetime="2000-01-01">{{daysAgo}}</time>
+          <time pubdate datetime="2000-01-01">{{daysAgo}}</time>
 
-        <div id=oneLiner>
-          {{oneLiner}}
-        </div>
+          <div id=oneLiner>
+            {{oneLiner}}
+          </div>
 
-      </article>
-    </section>
-  </div>
-</script>
+        </article>
+      </section>
+    </div>
+  </script>
 
 
 
@@ -53,10 +53,10 @@
   <nav>
     <ul>
       <li>
-        <a href='#' data-tab-number='1' class=active>Home</a>
+        <a href='/' data-tab-number='1' class=active>Home</a>
       </li>
       <li>
-        <a href='#' data-tab-number='2'>About</a>
+        <a href='/about' data-tab-number='2'>About</a>
       </li>
     </ul>
   </nav>
@@ -70,16 +70,18 @@
   <div id="handlebarsTemplatePlacement"></div>
 
   <div data-tab-number='2' id=hidden>
-    <p>As you can see, I am a purrito.</p>
+    <section id=about>
+      <p>As you can see, I am a purrito.</p>
 
-    <div id='social'>
-      <span class='fa fa-github-alt'><a href="http://github.com/risachi" target="_blank">risachi</a></span>
-      <span class='fa fa-twitter'><a href="http://twitter.com/therealcathrax" target="_blank">@theRealCathrax</a></span>
-    </div>
+      <div id='social'>
+        <span class='fa fa-github-alt'><a href="http://github.com/risachi" target="_blank">risachi</a></span>
+        <span class='fa fa-twitter'><a href="http://twitter.com/therealcathrax" target="_blank">@theRealCathrax</a></span>
+      </div>
 
-    <div>
-      <img id=profilePhoto src=images/personableProfilePhoto.jpg title="I'm a purrito" width='500'>
-    </div>
+      <div>
+        <img id=profilePhoto src=images/personableProfilePhoto.jpg title="I'm a purrito" width='500'>
+      </div>
+    </section>
   </div>
 
   <footer>
