@@ -1,28 +1,23 @@
 $(function() {
 
 
-  $('nav a').on('click', function(e) {
-    // * Find out the tab number
-    var tab = $(e.target);
-    var tabNumber = tab.attr('data-tab-number');
-
-    // * Return and do nothing if same tab was clicked (is active)
-    if (tab.hasClass('active')) {
-      return;
-    }
-
-    // * Get the content tab
-    var contentTab = $('div[data-tab-number=' + tabNumber + ']');
-
-    // * Hide'em all
-    $('div[data-tab-number]').hide();
-
-    // * Show the one we want
-    contentTab.show();
-
-    // * Toggle .active on all a's inside of nav
-    $('nav a').toggleClass('active');
-  });
+  // $('nav a').on('click', function(e) {
+  //   // * Find out the tab number
+  //   var tab = $(e.target);
+  //   var tabNumber = tab.attr('data-tab-number');
+  //   // * Return and do nothing if same tab was clicked (is active)
+  //   if (tab.hasClass('active')) {
+  //     return;
+  //   }
+  //   // * Get the content tab
+  //   var contentTab = $('div[data-tab-number=' + tabNumber + ']');
+  //   // * Hide'em all
+  //   $('div[data-tab-number]').hide();
+  //   // * Show the one we want
+  //   contentTab.show();
+  //   // * Toggle .active on all a's inside of nav
+  //   $('nav a').toggleClass('active');
+  // });
 
   function Project(piece) {
     this.title = piece.title;
