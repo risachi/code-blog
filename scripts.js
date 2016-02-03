@@ -1,4 +1,6 @@
 $(function() {
+
+
   $('nav a').on('click', function(e) {
     // * Find out the tab number
     var tab = $(e.target);
@@ -30,6 +32,67 @@ $(function() {
     this.description = piece.description;
     this.publishedOn = piece.publishedOn;
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// posts[] is located in projects.js
+
+  var postsAsJson = JSON.stringify(posts);
+
+  // retrieve using ajax
+  $.ajax('https://eaternet.io/api/agencies').success(function(data) {
+    console.log(data);
+    // console.log($.parseJSON(data));
+  }).fail(function() {
+    console.log('failed');
+  });
+  // render posts[{}] on the page
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   Project.prototype.age = function() {
     var MILLIS_IN_DAYS = 60 * 60 * 24 * 1000;
